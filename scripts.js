@@ -1,4 +1,4 @@
-const handler = e => {
+/* const handler = e => {
   console.log(e.type, e.target);
 };
 
@@ -11,7 +11,7 @@ document.addEventListener("focus", handler, true);
 document.addEventListener("blur", handler, true);
 document.addEventListener("pointerdown", handler, true);
 document.addEventListener("pointerup", handler, true);
-
+ */
 
 document.addEventListener('mousemove', (event) => {
   const eye = document.querySelector('.eye');
