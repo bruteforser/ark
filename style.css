@@ -1,6 +1,10 @@
-
+body > h1 {
+  text-align: center;
+  font-size: 4em;
+}
 
 #horsemen {
+  text-align: justify;
   transition: filter 1s ease;
 }
 
