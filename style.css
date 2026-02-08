@@ -1,5 +1,11 @@
 body {
-  font-size: 32px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
 body > h1 {
@@ -16,4 +22,39 @@ body > h1 {
 
 #horsemen:hover {
   filter: blur(5px);
+}
+
+.eye {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(193, 176, 255);
+  border-radius: 0 50%;
+  transform: rotate(-45deg);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+.sclera {
+  width: 90px;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  position: absolute;
+  top: 13%;
+  left: 9%;
+  right: 19%;
+  bottom: 11%;
+}
+
+.pupil {
+  width: 16px;
+  height: 16px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s linear;
 }
